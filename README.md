@@ -2,8 +2,8 @@
 Proyecto Personal Icelack Club App
 
 Correr Proyecto => 
-cd icelackApp
-npm run dev
+- cd icelackApp
+- npm run dev
 
 Desarrollado con React & Tailwind.
 
