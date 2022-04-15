@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #000;
+  --text-color: red;
+  --text-size: 5rem;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* --------------------- CSS GENERAL CON TAILWIND ---------------------- */
+/* titulo header icelack */
+.titulo_icelackApp {
+    @apply bg-black uppercase font-bold text-lg text-white p-5 text-center italic;
+}
+
+/* // Titulos generales  */
+h1 {
+  @apply uppercase font-bold text-center text-lg py-2
+}
+
+/* Botones  */
+.botonGeneral {
+  @apply bg-gray-800 hover:bg-gray-900 active:bg-gray-900 focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg uppercase p-3 px-5 py-3 text-white rounded-lg text-sm transition duration-150 ease-in-out; 
+}
+
+/* Boton 2  */
+
+/* Padding y Margin generales  */
+.paddingGeneral {
+  @apply p-2;
+
+}
+.marginGeneral{
+  @apply m-10;
+
+}
+
+.bg-image-general {
+  background-image: url(../src/img/banner1.jpg);
+  background-repeat: no-repeat;
+  max-width: 100%;
+  object-fit: cover;
+} 
+
