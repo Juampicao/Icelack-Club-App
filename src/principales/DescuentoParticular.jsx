@@ -2,15 +2,26 @@ import React from 'react'
 
 const DescuentoParticular = () => {
 
-    var numeroAleatorio = Math.floor(Math.random() * (123456 - 654321) * -1) ;
-    // console.log(numeroAleatorio)
+    let obtenerCodigoUnico = true; 
+
+    // Funcion numero Aleatorio
+    var numeroAleatorio = Math.floor(Math.random() * (123456 - 654321) * -1);
     
+
+    // Funcion Obtener codigo 
     function obtenerCodigo() {
-        // let textoObtenerCodigo = document.getElementById(`textoObtenerCodigo`)
-        // textoObtenerCodigo.textContent(numeroAleatorio)
-        console.log(numeroAleatorio)
+        if (obtenerCodigoUnico == true ) {
+        let codigo = document.getElementById(`codigo`)
+        let nuevoTitle = document.createElement(`h1`)
+        nuevoTitle.textContent = numeroAleatorio
+        codigo.appendChild(nuevoTitle)
+            obtenerCodigoUnico = false;
+          
+        }
     }
   
+  
+
     return (
         <div className='bg-slate-200'>
             <h1 className='mt-10'> DescuentoParticular.jsx</h1>
@@ -50,9 +61,10 @@ const DescuentoParticular = () => {
                     id='obtenerCodigo'
                     onClick={obtenerCodigo }
                     >
-                           <h1 id='textoObtenerCodigo'> Obtener código </h1>
-                       </button>
-                           {/* <h1 className=''>{numeroAleatorio}</h1> */}
+                        <h1> Obtener código </h1>
+                    </button>
+                    
+                    <div id='codigo' className=''>  </div>
 
             {/* <!---------------------------------------- Google Maps   -----------------------------------------------> */}
                     

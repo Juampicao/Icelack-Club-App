@@ -12,8 +12,8 @@ const Descuentos = () => {
         <h1 className=''> Descuentos.jsx </h1>
         <Spinner/>
       </div>
-      <div className=''> 
-        border-4 border-slate-900 p-3 rounded-full
+      <div className='border-4 border-slate-900 p-3 rounded-full'> 
+        
       </div>
       <CardDescuentos />
       <CardDescuentos />
